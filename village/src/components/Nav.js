@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+import './nav.css';
 
 function Nav(){
     return (
@@ -10,7 +11,7 @@ function Nav(){
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div className='collapse navbar-collapse' id='navbarNavAltMarkup'>
-               <div className='navbar-nav'>
+               <div className='navbar-nav ml-auto'>
                     <NavLink className='nav-item nav-link active' to="/smurfs">
                         Smurfs
                     </NavLink>

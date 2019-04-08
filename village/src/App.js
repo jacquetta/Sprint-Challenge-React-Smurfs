@@ -15,14 +15,14 @@ class App extends Component {
     };
   }
 
+  updateSmurf = newSmurf => {
+    this.setState({ smurfs: newSmurf});
+  };
+
   componentDidMount() {
     axios
     .get(`http://localhost:3333/smurfs`)
-    .then(response => {
-      this.setState(() => ({
-      smurfs: response.data
-    }))  
-  })
+    .then(response => this.setState({smurfs: response.data}))
     .catch(error => console.log(error))
   }
 
@@ -30,7 +30,7 @@ class App extends Component {
     return (
       <div className="App">
         <Route path='/' component={Nav} />
-        <Route path='/smurfs' exact render={props => (<Smurfs {...props} smurfs={this.state.smurfs} /> )} />
+        <Route path='/smurfs' exact render={props => (<Smurfs {...props} updateSmurf={this.updateSmurf} smurfs={this.state.smurfs} /> )} />
         <Route path="/form" render={props => (<Form {...props} /> )} />
       </div>
     );
