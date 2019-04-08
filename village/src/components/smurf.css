@@ -1,0 +1,17 @@
+body{
+    background-color: lightblue;
+}
+
+h1{
+    color: white;
+    text-align: left;
+    padding-left: 4%;
+    margin: 3%;
+    font-family: 'Dokdo', cursive;
+    font-size: 5rem;
+}
+.card {
+    margin: 1%;
+    border: 3px solid black;
+    font-family: 'Poppins', sans-serif;
+}
