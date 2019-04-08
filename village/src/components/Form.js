@@ -25,7 +25,6 @@ class SmurfForm extends Component {
       email: ""
     });
   }
-
  
 
    handleInputChange = e => {
