@@ -1,11 +1,19 @@
 import React from 'react';
 
+import './smurfStyle.css';
+
 const Smurf = props => {
     return (
-        <div className="Smurf">
-            <h3>{props.name}</h3>
-            <strong>{props.height}</strong>
-            <p>{props.age} smurf years old</p>
+        <div className='col'>
+            <div className="Smurf card">
+                <div className="card-header">
+                    <h3>{props.name}</h3>
+                </div>
+                <div className="card-body">
+                    <p>{props.height}</p>
+                    <p>{props.age}</p>
+                </div>
+            </div>
         </div>
     );
 };

@@ -1,5 +1,6 @@
 import React from 'react';
 
+import './smurfStyle.css';
 import Smurf from './Smurf';
 
 class Smurfs extends React.Component {
@@ -7,7 +8,7 @@ class Smurfs extends React.Component {
         return(
             <div className="Smurfs">
                 <h1>Smurf Village</h1>
-                <ul>
+                <ul className="row">
                     {this.props.smurfs.map(smurf => {
                         return (
                             <Smurf
