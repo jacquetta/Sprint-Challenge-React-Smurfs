@@ -10,7 +10,7 @@ h1{
     font-size: 3.4rem;
 }
 
-p, h3{
+p, h3, label{
     font-family: 'Black Han Sans', sans-serif;
     font-weight: 200;
 }
@@ -19,6 +19,11 @@ p, h3{
     margin: 2% 5%;
 }
 
-button {
-    margin-right: 300px;
+.form-control {
+    border: 3px solid #ccfbfe;
+}
+
+.btn{
+    margin-right: 30%;
+    background-color: #ccfbfe;
 }

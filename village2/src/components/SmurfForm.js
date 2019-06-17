@@ -64,7 +64,7 @@ class SmurfForm extends Component {
                     </div>
 
                     <div className="form-group row">
-                        <label className='col-sm-2 col-form-label'>height:</label>
+                        <label className='col-sm-2 col-form-label'>Height:</label>
                         <input
                             className="form-control col-sm-4"
                             onChange={this.handleInputChange}
@@ -73,7 +73,7 @@ class SmurfForm extends Component {
                             name="height"
                         />
                     </div>
-                    <button type="submit">Add to the village</button>
+                    <button className="btn" type="submit">Add to the village</button>
                 </form>
             </div>
         );
