@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 
 import './App.css';
 import SmurfForm from './components/SmurfForm';
@@ -10,6 +11,15 @@ class App extends React.Component{
     this.state = {
       smurfs: [],
     };
+  }
+
+  componentDidMount(){
+    axios
+      .get("http://localhost:3333/smurfs")
+      .then(res => {
+        this.setState(() => ({smurfs: res.data}))
+      })
+      .catch(err => console.log('Server Error', err))
   }
 
   render(){
